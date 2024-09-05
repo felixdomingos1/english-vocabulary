@@ -8,15 +8,11 @@ OPTED is a public domain English word list dictionary, based on the public domai
 
 Since the dictionary is based on 1913 edition, it does not include any modern words (Yet!, but in a future release will include the database Princeton University's [WordNet](https://wordnet.princeton.edu/download/current-version).
 
-## Getting Started
+# Project Goal
+I've always been captivated by English literature. Listening to audiobooks while working or driving is a favorite pastime, particularly those from the pre-1990s era. However, I occasionally encounter challenges understanding certain words or the overall context. Puzzlingly, I often miss puns, even when they're clearly part of the narrative. To address this, I believe expanding my vocabulary is essential. A simple approach could involve a system with words, checkboxes, and information buttons. If a word is familiar, I can move on. Otherwise, I'd like to hear its pronunciation and learn its meaning. New words would be flagged for later review to reinforce my understanding.
+## IMPORTANT ⚠️
 
-You can clone the repository by running:
-
-```bash
-git clone https://github.com/UberPython/English-Dictionary-Open-Source
-```
-
-Find the [usage instructions here](https://github.com/UberPython/English-Dictionary-Open-Source/blob/main/USAGE.md).
+This project is specifically designed for advanced English learners at the C1+ level. It's not intended as a comprehensive language course but rather as a tool to deepen your understanding of the English language. By focusing on nuanced vocabulary, idiomatic expressions, and complex grammatical structures, this resource aims to challenge and stimulate your linguistic growth.
 
 ## Data Structure
 
@@ -44,15 +40,18 @@ There are 3 formats available as of now
 
 | Format & Link                                                | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [CSV](https://github.com/UberPython/English-Dictionary-Open-Source/tree/main/csv) | A single file with all the words in standard CSV format      |
-| [SQLITE3](https://github.com/UberPython/English-Dictionary-Open-Source/tree/main/sqlite3) | A single file formatted as a SQLITE3 database                |
-| [MYSQL](https://github.com/UberPython/English-Dictionary-Open-Source/tree/main/mysql) | MySQL dump that can be imported directly inside MySQL / MariaDB |
+| [SQLITE3](https://github.com/UberPython/English-Dictionary-Open-Source/tree/main/sqlite3) | A single file formatted as a SQLITE3 
 
 ## Usage Instructions
 
+```bash
+npm install
+node app.js
+```
+
 | Language                                                     | Instructions are available for                               |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Python](https://github.com/UberPython/English-Dictionary-Open-Source/blob/main/USAGE.md#python) | [CSV](https://github.com/UberPython/English-Dictionary-Open-Source/blob/main/USAGE.md#csv), [SQLITE3](https://github.com/UberPython/English-Dictionary-Open-Source/blob/main/USAGE.md#sqlite3), MYSQL |
+
 
 ## Credits
 
