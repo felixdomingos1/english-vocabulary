@@ -17,17 +17,15 @@ const db = new sqlite3.Database('progress/progress.db');
 
 app.get('/',  (req, res) => {
    db.all('SELECT count(*) as count FROM entries', (err, rows) => {
-
-
-    db.all('SELECT distinct word FROM entries', (err, rows) => {
-      console.log(rows);
-    });
-
-
      res.render('index', {wordsCount:rows[0].count});
   });
 });
 
+app.post("/getRandomQuestion", (req, res)=>{
+  db.all('SELECT * FROM entries where status is null limit 1', (err, row) => {
+    res.json(row[0]);
+  });
+});
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });

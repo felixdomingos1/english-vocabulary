@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple App</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  />
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
@@ -19,12 +20,44 @@
       <div class="col-md-9">
         <h1 class="mt-4">Welcome to the Home Page</h1>
         <p>There are <%= wordsCount %> words</p>
+
+
+        <div class="col-md-12 text-center">
+
+
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><b class="word-b">Card Title</b>
+              <button type="button" class="btn btn-primary showIt"><i class="fa-solid fa-arrow-down-long"></i></button>
+              </h5>
+              <p class="card-text word-d collapse"></p>   
+            </div>
+            <div class="card-footer text-center">
+              <button type="button" class="btn btn-danger">   1</button>
+              <button type="button" class="btn btn-danger">   2</button>
+              <button type="button" class="btn btn-info">   3</button>
+              <button type="button" class="btn btn-info">   4</button>
+              <button type="button" class="btn btn-primary">   5</button>
+              <button type="button" class="btn btn-primary">   6</button>
+              <button type="button" class="btn btn-primary">   7</button>
+              <button type="button" class="btn btn-primary">   8</button>
+              <button type="button" class="btn btn-success">   9</button>
+              <button type="button" class="btn btn-success">   10</button>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
     </div>
+    
   </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
